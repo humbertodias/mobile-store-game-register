@@ -17,8 +17,20 @@ sudo apt-get install ffmpeg imagemagick
 ```
 
 
-
 # How to Use
+
+First clone this repository
+```
+git clone https://github.com/humbertodias/mobile-store-game-register.git
+```
+Second enter on root directory
+```
+cd mobile-store-game-register
+```
+
+Later replace all files on **/in** for your game files
+
+And after do it:
 
 For **apple**
 
@@ -38,9 +50,7 @@ For **Windows**
 make windows
 ```
 
-# Generated Files
-
-Check out at **/out** directory
+At the end, check out at **/out** directory
 
 # Mobile Store
 
