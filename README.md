@@ -47,24 +47,42 @@ Check out at **/out** directory
 ### App Developer Center
 $90 per year
 
+Register you game bundle id
+
 [https://developer.apple.com](https://developer.apple.com)
 
-and
+Publish your **.ipa** at
 
 [https://itunesconnect.apple.com](https://itunesconnect.apple.com)
 
-### Android Developer
+Get your game on **App Store**
+
+[https://itunes.apple.com/us/genre/ios/](https://itunes.apple.com/us/genre/ios/)
+
+### Google Play Developer Console
 
 $25 per year
 
-[https://console.developers.google.com](https://console.developers.google.com)
+Register and Publish your **.apk** at
+
+[https://play.google.com/apps/publish](https://play.google.com/apps/publish)
+
+Get your game on **Play Store**
+
+[https://play.google.com/store](https://play.google.com/store)
 
 
 ### Windows Dev Center
 
 R$45 per year
 
+Register and Publish your **.appx** at
+
 [https://dev.windows.com](https://dev.windows.com)
+
+Get your game on **Microsoft Store**
+
+[https://www.microsoft.com/en-us/store/games](https://www.microsoft.com/en-us/store/games)
 
 
 
