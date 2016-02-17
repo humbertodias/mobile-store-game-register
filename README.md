@@ -95,4 +95,15 @@ Get your game on **Microsoft Store**
 [https://www.microsoft.com/en-us/store/games](https://www.microsoft.com/en-us/store/games)
 
 
+## Ads
+
+Google Analytics
+
+[https://analytics.google.com](https://analytics.google.com)
+
+
+Google AdSense
+
+[https://www.google.com/adsense](https://www.google.com/adsense)
+
 
