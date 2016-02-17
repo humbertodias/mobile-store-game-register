@@ -1,6 +1,11 @@
 mkdir:
 	mkdir -pv out && cd out && mkdir -pv apple/3.5-Inch apple/4-Inch apple/4.7-Inch apple/5.5-Inch apple/iPad apple/iPad\ Pro android windows
 
+
+apple_icon: mkdir
+	convert in/icon.png -resize 1024x1024\! -alpha remove -alpha off out/apple/icon-1024x1024.png
+	convert in/icon.png -resize 167x167\! -alpha remove -alpha off out/apple/icon-167x167.png
+
 apple_3.5: mkdir
 	convert in/01.png -resize 960x640\! -alpha remove -alpha off out/apple/3.5-Inch/01-960x640.png
 	convert in/02.png -resize 960x640\! -alpha remove -alpha off out/apple/3.5-Inch/02-960x640.png
@@ -48,7 +53,7 @@ apple_ipadpro: mkdir
 	convert in/05.png -resize 2732x2048\! -alpha remove -alpha off out/apple/iPad\ Pro/05-2732x2048.png
 	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1200x900 -aspect 1.33333333333333 out/apple/iPad\ Pro/"App Preview-1200x900.mp4"
 
-apple: apple_ipadpro apple_ipad apple_5.5 apple_4.7 apple_4 apple_3.5
+apple: apple_icon apple_ipadpro apple_ipad apple_5.5 apple_4.7 apple_4 apple_3.5
 
 android_icon: mkdir
 	convert in/icon.png -resize 512x512\! -alpha remove -alpha off out/android/icon-512x512.png
