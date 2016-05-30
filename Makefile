@@ -14,15 +14,15 @@ apple_icon: mkdir
 	convert in/icon.png -resize 1024x1024\!  -alpha on out/apple/icon-1024x1024.png
 
 apple_splash: mkdir
-	convert in/splash.png -resize 640x960\! -alpha on out/apple/splash-640x960.png
-	convert in/splash.png -resize 640x1136\!  -alpha on out/apple/splash-640x1136.png
-	convert in/splash.png -resize 750x1334\!  -alpha on out/apple/splash-750x1334.png
-	convert in/splash.png -resize 1242x2208\!  -alpha on out/apple/splash-1242x2208.png
-	convert in/splash.png -resize 2208x1242\!  -alpha on out/apple/splash-2208x1242.png
-	convert in/splash.png -resize 768x1024\!  -alpha on out/apple/splash-768x1024.png
-	convert in/splash.png -resize 1536x2048\!  -alpha on out/apple/splash-1536x2048.png
-	convert in/splash.png -resize 1024x768\!  -alpha on out/apple/splash-1024x768.png
-	convert in/splash.png -resize 2048x1536\!  -alpha on out/apple/splash-2048x1536.png
+	convert in/splash.png -resize 640x960 -alpha on out/apple/splash-640x960.png
+	convert in/splash.png -resize 640x1136  -alpha on out/apple/splash-640x1136.png
+	convert in/splash.png -resize 750x1334  -alpha on out/apple/splash-750x1334.png
+	convert in/splash.png -resize 1242x2208  -alpha on out/apple/splash-1242x2208.png
+	convert in/splash.png -resize 2208x1242  -alpha on out/apple/splash-2208x1242.png
+	convert in/splash.png -resize 768x1024  -alpha on out/apple/splash-768x1024.png
+	convert in/splash.png -resize 1536x2048  -alpha on out/apple/splash-1536x2048.png
+	convert in/splash.png -resize 1024x768  -alpha on out/apple/splash-1024x768.png
+	convert in/splash.png -resize 2048x1536  -alpha on out/apple/splash-2048x1536.png
 
 apple_3.5: mkdir
 	convert in/01.png -resize 960x640\! -alpha remove -alpha off out/apple/3.5-Inch/01-960x640.png
@@ -82,14 +82,14 @@ android_icon: mkdir
 	convert in/icon.png -resize 512x512\! -alpha on out/android/icon-512x512.png
 
 android_splash: mkdir
-	convert in/splash.png -resize 320x470\! -alpha on out/android/splash-320x470.png
-	convert in/splash.png -resize 470x320\! -alpha on out/android/splash-470x320.png
-	convert in/splash.png -resize 480x640\! -alpha on out/android/splash-480x640.png
-	convert in/splash.png -resize 640x480\! -alpha on out/android/splash-640x480.png
-	convert in/splash.png -resize 720x960\! -alpha on out/android/splash-720x960.png
-	convert in/splash.png -resize 960x720\! -alpha on out/android/splash-960x720.png
-	convert in/splash.png -resize 1080x1440\! -alpha on out/android/splash-1080x1440.png
-	convert in/splash.png -resize 1440x1080\! -alpha on out/android/splash-1440x1080.png
+	convert in/splash.png -resize 320x470 -alpha on out/android/splash-320x470.png
+	convert in/splash.png -resize 470x320 -alpha on out/android/splash-470x320.png
+	convert in/splash.png -resize 480x640 -alpha on out/android/splash-480x640.png
+	convert in/splash.png -resize 640x480 -alpha on out/android/splash-640x480.png
+	convert in/splash.png -resize 720x960 -alpha on out/android/splash-720x960.png
+	convert in/splash.png -resize 960x720 -alpha on out/android/splash-960x720.png
+	convert in/splash.png -resize 1080x1440 -alpha on out/android/splash-1080x1440.png
+	convert in/splash.png -resize 1440x1080 -alpha on out/android/splash-1440x1080.png
 
 android_tela: mkdir
 	convert in/01.png -resize 3840x3840\! -alpha remove -alpha off out/android/01-3840x3840.png
