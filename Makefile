@@ -106,11 +106,14 @@ android_tela: mkdir
 	convert in/03.png -resize 3840x3840^ -extent 3840x3840 -gravity center -alpha remove -alpha off out/android/03-3840x3840.png
 	convert in/04.png -resize 3840x3840^ -extent 3840x3840 -gravity center -alpha remove -alpha off out/android/04-3840x3840.png
 	convert in/05.png -resize 3840x3840^ -extent 3840x3840 -gravity center -alpha remove -alpha off out/android/05-3840x3840.png
+	convert in/06.png -resize 3840x3840^ -extent 3840x3840 -gravity center -alpha remove -alpha off out/android/06-3840x3840.png
+	convert in/07.png -resize 3840x3840^ -extent 3840x3840 -gravity center -alpha remove -alpha off out/android/07-3840x3840.png
+	convert in/08.png -resize 3840x3840^ -extent 3840x3840 -gravity center -alpha remove -alpha off out/android/08-3840x3840.png
 
 android_title: mkdir
-	convert in/title.png -resize 1024x500 -alpha remove -alpha off out/android/title-1024x500.png
-	convert in/title.png -resize 180x120 -alpha remove -alpha off out/android/title-180x120.png
-	convert in/title.png -resize 320x180 -alpha remove -alpha off out/android/title-320x180.png
+	convert in/title.png -resize 1024x500^ -extent 1024x500 -gravity center -alpha remove -alpha off out/android/title-1024x500.png
+	convert in/title.png -resize 180x120^ -extent 180x120 -gravity center -alpha remove -alpha off out/android/title-180x120.png
+	convert in/title.png -resize 320x180^ -extent 320x180 -gravity center -alpha remove -alpha off out/android/title-320x180.png
 
 android: android_icon android_tela android_title
 
