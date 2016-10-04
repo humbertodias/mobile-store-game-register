@@ -54,31 +54,31 @@ apple_4.7: mkdir
 	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=750:-1,setsar=1:1 -aspect 0.56221889055472 -s 750x1334 out/apple/4.7-Inch/"App Preview-750x1334.mp4"
 
 apple_5.5: mkdir
-	convert in/01.png -resize 2208x1242^ -extent 2208x1242 -gravity center -alpha remove -alpha off out/apple/5.5-Inch/01-2208x1242.png
-	convert in/02.png -resize 2208x1242^ -extent 2208x1242 -gravity center -alpha remove -alpha off out/apple/5.5-Inch/02-2208x1242.png
-	convert in/03.png -resize 2208x1242^ -extent 2208x1242 -gravity center -alpha remove -alpha off out/apple/5.5-Inch/03-2208x1242.png
-	convert in/04.png -resize 2208x1242^ -extent 2208x1242 -gravity center -alpha remove -alpha off out/apple/5.5-Inch/04-2208x1242.png
-	convert in/05.png -resize 2208x1242^ -extent 2208x1242 -gravity center -alpha remove -alpha off out/apple/5.5-Inch/05-2208x1242.png
-	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1920x1080 -aspect 1.77777777777778 out/apple/5.5-Inch/"App Preview-1920x1080.mp4"
-	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1080x1920 -aspect 0.5625 out/apple/5.5-Inch/"App Preview-1080x1920.mp4"
+	convert in/01.png -background black -gravity center -extent 2208x1242 -alpha remove -alpha off out/apple/5.5-Inch/01-2208x1242.png
+	convert in/02.png -background black -gravity center -extent 2208x1242 -alpha remove -alpha off out/apple/5.5-Inch/02-2208x1242.png
+	convert in/03.png -background black -gravity center -extent 2208x1242 -alpha remove -alpha off out/apple/5.5-Inch/03-2208x1242.png
+	convert in/04.png -background black -gravity center -extent 2208x1242 -alpha remove -alpha off out/apple/5.5-Inch/04-2208x1242.png
+	convert in/05.png -background black -gravity center -extent 2208x1242 -alpha remove -alpha off out/apple/5.5-Inch/05-2208x1242.png
+	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1920:1080 -r 30 out/apple/5.5-Inch/"App Preview-1920x1080.mp4"
+	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1080:1920 -r 30 out/apple/5.5-Inch/"App Preview-1080x1920.mp4"
 
 apple_ipad: mkdir
-	convert in/01.png -resize 2048x1536^ -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/01-2048x1536.png
-	convert in/02.png -resize 2048x1536^ -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/02-2048x1536.png
-	convert in/03.png -resize 2048x1536^ -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/03-2048x1536.png
-	convert in/04.png -resize 2048x1536^ -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/04-2048x1536.png
-	convert in/05.png -resize 2048x1536^ -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/05-2048x1536.png
-	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1200x900 -aspect 1.33333333333333 out/apple/iPad/"App Preview-1200x900.mp4"
-	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=900x1200 -aspect 0.75 out/apple/iPad/"App Preview-900x1200.mp4"
+	convert in/01.png -background black -gravity center -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/01-2048x1536.png
+	convert in/02.png -background black -gravity center -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/02-2048x1536.png
+	convert in/03.png -background black -gravity center -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/03-2048x1536.png
+	convert in/04.png -background black -gravity center -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/04-2048x1536.png
+	convert in/05.png -background black -gravity center -extent 2048x1536 -gravity center -alpha remove -alpha off out/apple/iPad/05-2048x1536.png
+	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1200:900 -r 30 out/apple/iPad/"App Preview-1200x900.mp4"
+	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=900:1200 -r 30 out/apple/iPad/"App Preview-900x1200.mp4"
 
 apple_ipadpro: mkdir
-	convert in/01.png -resize 2732x2048^ -extent 2732x2048 -gravity center -alpha remove -alpha off out/apple/iPad\ Pro/01-2732x2048.png
-	convert in/02.png -resize 2732x2048^ -extent 2732x2048 -gravity center -alpha remove -alpha off out/apple/iPad\ Pro/02-2732x2048.png
-	convert in/03.png -resize 2732x2048^ -extent 2732x2048 -gravity center -alpha remove -alpha off out/apple/iPad\ Pro/03-2732x2048.png
-	convert in/04.png -resize 2732x2048^ -extent 2732x2048 -gravity center -alpha remove -alpha off out/apple/iPad\ Pro/04-2732x2048.png
-	convert in/05.png -resize 2732x2048^ -extent 2732x2048 -gravity center -alpha remove -alpha off out/apple/iPad\ Pro/05-2732x2048.png
-	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=1200x900 -aspect 1.33333333333333 out/apple/iPad\ Pro/"App Preview-1200x900.mp4"
-	ffmpeg -i in/"App Preview.mp4" -strict -2 -vf scale=900x1200 -aspect 0.75 out/apple/iPad\ Pro/"App Preview-900x1200.mp4"
+	convert in/01.png -background black -gravity center -extent 2732x2048 -alpha remove -alpha off out/apple/iPad\ Pro/01-2732x2048.png
+	convert in/02.png -background black -gravity center -extent 2732x2048 -alpha remove -alpha off out/apple/iPad\ Pro/02-2732x2048.png
+	convert in/03.png -background black -gravity center -extent 2732x2048 -alpha remove -alpha off out/apple/iPad\ Pro/03-2732x2048.png
+	convert in/04.png -background black -gravity center -extent 2732x2048 -alpha remove -alpha off out/apple/iPad\ Pro/04-2732x2048.png
+	convert in/05.png -background black -gravity center -extent 2732x2048 -alpha remove -alpha off out/apple/iPad\ Pro/05-2732x2048.png
+	ffmpeg -i in/"App Preview.mp4" -s 1200x900 -r 30 out/apple/iPad\ Pro/"App Preview-1200x900.mp4"
+	ffmpeg -i in/"App Preview.mp4" -s 900x1200 -r 30 out/apple/iPad\ Pro/"App Preview-900x1200.mp4"
 
 apple: apple_icon apple_ipadpro apple_ipad apple_5.5 apple_4.7 apple_4 apple_3.5
 
