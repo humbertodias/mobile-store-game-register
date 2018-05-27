@@ -1,5 +1,5 @@
 mkdir:
-	mkdir -pv out && cd out && mkdir -pv apple/3.5-Inch apple/4-Inch apple/4.7-Inch apple/5.5-Inch apple/iPad apple/iPad\ Pro android windows
+	mkdir -pv out && cd out && mkdir -pv apple/3.5-Inch apple/4-Inch apple/4.7-Inch apple/5.5-Inch apple/iPad apple/iPad\ Pro android windows unity_asset_store
 
 apple_icon: mkdir
 	convert in/icon.png -resize 29x29\! -alpha remove -alpha off out/apple/icon-29x29.png
@@ -135,6 +135,12 @@ windows_desktop: mkdir
 	convert in/05.png -resize 1366x768 -alpha remove -alpha off out/windows/05-1366x768.png
 
 windows: windows_desktop windows_mobile windows_icon
+
+unity_asset_store: mkdir
+	convert -geometry 128x128\! in/icon.png out/unity_asset_store/icon-128x128.png
+	convert -geometry 200x124\! in/title.png out/unity_asset_store/title-200x124.png
+	convert -resize 516x389 -background black -gravity center -extent 516x389 in/title.png out/unity_asset_store/title-516x389.png
+	convert -geometry 1200x630\! in/title.png out/unity_asset_store/title-1200x630.png
 
 clean:
 	rm -rf out
