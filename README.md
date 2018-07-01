@@ -107,3 +107,6 @@ Google AdSense
 [https://www.google.com/adsense](https://www.google.com/adsense)
 
 
+Generate Privacy Policy
+
+[http://termsfeed.com](https://termsfeed.com/wizard/privacy-policy)
