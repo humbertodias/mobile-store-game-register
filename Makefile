@@ -144,3 +144,9 @@ unity_asset_store: mkdir
 
 clean:
 	rm -rf out
+
+ipa:
+	./sign_ipa.sh
+
+apk:
+	./sign_apk.sh
